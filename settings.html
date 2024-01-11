@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="Images/Logo.jpg">
+    <link rel="stylesheet" href="settings.css">
+    <title>Matrix</title>
+</head>
+<body>
+    <div class="section">
+        <div class="sidebar">
+            <h1>Matrix</h1>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="active" href="#settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a calss="active" href="#">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Fiels</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search">
+                    <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="icons">
+                    <span class="notifications" onclick="menuToggle()">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </span>
+                    <img src="Images/avatar.png">
+                </div>
+                <div class="not-menu">
+                    <div class="top-bar">
+                        <h2>Notifications</h2>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="second-bar">
+                        <h4>New</h4>
+                        <span>See All</span>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-01.png">
+                        <span>Amir Liked Your Post.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-02.png">
+                        <span>Alaa Liked Your Video.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-03.png">
+                        <span>Mohammed Followed You.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-04.png">
+                        <span>Eslam Liked Your Post.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-01.png">
+                        <span>Sayed Followed You.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-02.png">
+                        <span>Amira Liked Your Post.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                    <div class="content-bar">
+                        <img src="Images/team-05.png">
+                        <span>Ahmed Mentiond You.</span>
+                        <p>about an hour ago</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title">Settings</h1>
+            <div class="settings-page">
+                <div class="settings-box">
+                    <h2>Site Control</h2>
+                    <p>Control The Website If There Is Maintenance</p>
+                    <div class="main-text">
+                        <div>
+                            <span>Website Control</span>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch" style="margin: 0;"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="close-message" placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="genral-box">
+                    <h2>General Info</h2>
+                    <p>General Information About Your Account</p>
+                    <div class="general-label">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name">
+                        <div class="ee">
+                            <label for="email">Email</label>
+                            <input type="text" id="Email" placeholder="Email">
+                            <a href="#" class="save-btn">Save</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="security">
+                    <h2>Security Info</h2>
+                    <p>Security Information About Your Account</p>
+                    <div class="security-box">
+                        <div>
+                            <span>Password</span>
+                            <p>Changed On 25/12/2023</p>
+                        </div>
+                        <div>
+                            <a href="#" class="change-btn">Change</a>
+                        </div>
+                    </div>
+                    <div class="security-box">
+                        <div>
+                            <span>Two-Factor Authentication</span>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="security-box">
+                        <div>
+                            <span>Devices</span>
+                            <p>Check The Login Devices List</p>
+                        </div>
+                        <div>
+                            <a href="#" class="change-btn" style=" color: black; background: #efefef;">Devices</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="backup-box">
+                    <h2>Backup Manager</h2>
+                    <p>Control Backup Time And Location</p>
+                    <div class="date">
+                        <input type="radio" name="time" id="daily" checked>
+                        <label for="daily">Daily</label>
+                    </div>
+                    <div class="date">
+                        <input type="radio" name="time" id="weekly">
+                        <label for="daily">Weekly</label>
+                    </div>
+                    <div class="date">
+                        <input type="radio" name="time" id="monthly">
+                        <label for="daily">Monthly</label>
+                    </div>
+                    <div class="servers">
+                        <input type="radio" name="servers" id="server-one">
+                        
+                        <div class="server">
+                            <label for="server--one">
+                                <i class="fa-solid fa-bars-staggered"></i> MegaMan
+                            </label>
+                        </div>
+                        <input type="radio" name="servers" id="server-two" checked>
+
+                        <div class="server">
+                            <label for="server--one">
+                                <i class="fa-solid fa-elevator"></i> Matrix
+                            </label>
+                        </div>
+                        <input type="radio" name="servers" id="server-three">
+
+                        <div class="server">
+                            <label for="server--one">
+                                <i class="fa-solid fa-satellite-dish"></i> Sigma
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id=bgLoading>
+        <div class=loading-container>
+            <div class=item></div>
+            <div class=item></div>
+            <div class=item></div>
+            <div class=item></div>
+        </div>
+    </div>
+    <button id="scrolltotop" title="Scroll to top"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
